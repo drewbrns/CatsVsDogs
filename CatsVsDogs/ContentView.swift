@@ -18,11 +18,7 @@ struct ContentView: View {
     }
 
     @State private var state: ViewState = .loading
-    @State private var selectedClassifier: AnimalClassifier = AppleAnimalClassifier() {
-        didSet {
-            state = .loading
-        }
-    }
+    @State private var selectedClassifier: AnimalClassifier = AppleAnimalClassifier()
 
     var body: some View {
         VStack(spacing: 20) {

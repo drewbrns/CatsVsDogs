@@ -47,7 +47,9 @@ final class KaggleAnimalClassifier: AnimalClassifier {
         return try handleResults(results)
     }
 
-    private func performCoreMLRequest(_ model: VNCoreMLModel, on image: CGImage) async throws -> [VNClassificationObservation] {
+    private func performCoreMLRequest(
+        _ model: VNCoreMLModel,
+        on image: CGImage) async throws -> [VNClassificationObservation] {
         return try await withCheckedThrowingContinuation { continuation in
             var hasResumed = false
 
