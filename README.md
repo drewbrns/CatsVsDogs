@@ -2,7 +2,7 @@
 
 # Cats vs Dogs
 
-This repository contains example algorithms designed to classify images of cats and dogs, using two distinct approaches:
+This repository contains example algorithms designed to classify images of cats and dogs, using two approaches:
 
 1. **Apple's Vision Framework** - Utilizes the [`RecognizeAnimalsRequest`](https://developer.apple.com/documentation/vision/recognizeanimalsrequest) API to recognize animal types in images.
 2. **Custom Image Classifier** - A custom classifier trained on the [Kaggle Dogs vs. Cats dataset](https://www.kaggle.com/competitions/dogs-vs-cats/), created with [CreateML](https://developer.apple.com/documentation/createml).
